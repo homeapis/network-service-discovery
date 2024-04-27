@@ -26,7 +26,7 @@ if [[ "$user_choice" == "y" ]]; then
   # Display network interfaces
   display_interfaces
 
-  # Ask for confirmation again after displaying interfaces
+  # **Read user input again after displaying interfaces**
   printf "\nThe above are your network interfaces. Are you sure you want to continue? (y/N): "
   read -r user_choice
   user_choice=$(tr [A-Z] [a-z] <<< "$user_choice")
